@@ -1,0 +1,10 @@
+physics,id,bnem_level,bnem_error,fem_level,fem_elements
+heat,BH01,h0.080,0.0003965497441766693,0.1% converged reference,37381
+heat,BH14,h0.080,0.0005823153174554661,0.1% converged reference,39955
+heat,BH22,h0.080,0.0008977628847974095,0.1% converged reference,30791
+heat,BE04,h0.080,0.0025100019215983896,0.1% converged reference,63107
+heat,BE02,h0.080,0.003166976195791379,0.1% converged reference,32724
+heat,BE07,h0.080,0.002383016375704385,0.1% converged reference,33949
+elasticity,BE05,h0.040,0.003673772947834087,0.1% converged reference,61317
+elasticity,BE12,h0.056,0.005365147391481817,0.1% converged reference,36207
+elasticity,BE17,h0.056,0.009043974484293003,0.1% converged reference,23810

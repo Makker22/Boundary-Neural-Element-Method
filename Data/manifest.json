@@ -1,0 +1,170 @@
+{
+  "schema": "bnem.release_manifest.v1",
+  "files": [
+    {
+      "path": "Data/figure_inputs/figure2/per_cell_metrics.csv",
+      "bytes": 505450,
+      "sha256": "ecbc98344777674f7c88a1bcf8576fb7e3c2da7d35c48bbc02caabfd5ba02073"
+    },
+    {
+      "path": "Data/figure_inputs/figure2/per_cell_metrics.npz",
+      "bytes": 157162,
+      "sha256": "0382adbafc79e1f35078d7c9c030f0f2e2d4a1a542e308e8f2bdd2675f423801"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BE02_heat.csv",
+      "bytes": 1150748,
+      "sha256": "8da3547eeae0f2f1ea5a9add83d924bf15416517019ddddf74bac6bee65e850a"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BE04_heat.csv",
+      "bytes": 1156173,
+      "sha256": "eb645692939ec30fd7b6b38daf33e1ac8d1523a7ce969167a1a91744de71b64c"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BE07_heat.csv",
+      "bytes": 1191457,
+      "sha256": "aa2ee278518bec40d26ecde1efd47fcd5201257d8f7ef624331ae47240c8e89a"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BH01_heat.csv",
+      "bytes": 1191166,
+      "sha256": "15701437ff81612066279996a68205c4fa0237c9e8a0ad880733de2f723ce99a"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BH14_heat.csv",
+      "bytes": 984709,
+      "sha256": "7eebe1538d56906be900ba2a604be3913abdc1675383ae5e3a062a0518fb4642"
+    },
+    {
+      "path": "Data/figure_inputs/figure3/fields/BH22_heat.csv",
+      "bytes": 1071215,
+      "sha256": "99c380344d09bba4f137d1ddc3d97247c86c3381bf468ebaabd8c9a5a6c2d766"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/fields/E05_horizontal_elastic.csv",
+      "bytes": 1638301,
+      "sha256": "386a99e998ebe858fc2dd5efd21c9f1ed374c7878797efeccc2c0daa398b9d27"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/fields/E12_horizontal_elastic.csv",
+      "bytes": 1685379,
+      "sha256": "9cd5975c4d8fa54d41897f6cd633743dc38ef49348c61a864d04bad78f24b1b1"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/fields/E17_horizontal_elastic.csv",
+      "bytes": 1235508,
+      "sha256": "5f4ad456843666a8461327968ca72276dd824646b21ade2cd59d51803e7fad54"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/single_hole/single_circular_hole_boundary.csv",
+      "bytes": 29734,
+      "sha256": "36a3d4952525c8050a6e5d46e079d904a640a89433e0d532509b5a232f6c615c"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/single_hole/single_circular_hole_horizontal_fields.csv",
+      "bytes": 1609361,
+      "sha256": "cbcc8da12035d128b4557f43e76f26fd581f468f5b1a55318467b2e35763740c"
+    },
+    {
+      "path": "Data/figure_inputs/figure4/single_hole/summary.json",
+      "bytes": 605,
+      "sha256": "2ce5bee5aba7f43dedd0f4936830def26f63625bbc60130fc05101ef5254fdde"
+    },
+    {
+      "path": "Data/geometry/display_selection.csv",
+      "bytes": 709,
+      "sha256": "8d2e2d953d4f064ba9973a409ff44950ef68e0c8e029c3915d74041256f8be8a"
+    },
+    {
+      "path": "Data/geometry/elastic_bnem_mesh_bank.json",
+      "bytes": 996709,
+      "sha256": "023dc9c141058d2ca7364ae4eae2085f372269ae2ba311dd46107608b2e0706a"
+    },
+    {
+      "path": "Data/geometry/heat_bnem_mesh_bank.json",
+      "bytes": 775235,
+      "sha256": "fae9b3172b8e53dcb06c4dcbc212efb4c088cabfba8983e7c21da3d8a532104f"
+    },
+    {
+      "path": "Data/LICENSE",
+      "bytes": 401,
+      "sha256": "193d3aa663d785b7ec143d8cb871fc9f078c4eb278e6fbfc08d8af9bd917f28d"
+    },
+    {
+      "path": "Data/README.md",
+      "bytes": 1519,
+      "sha256": "2b490764ba9bc96f6e712b2e54c5db0e48d028d19dffc8efd908100af811d0e3"
+    },
+    {
+      "path": "Data/results/figure2/operator_metrics.json",
+      "bytes": 5272,
+      "sha256": "4e4cb7ffa958f77f5531dc371ede462fa26e4baa5c691966ff75a30ff6d3e05f"
+    },
+    {
+      "path": "Data/results/figure3/ablation.csv",
+      "bytes": 9773,
+      "sha256": "76a41f278785df4ee14b1b014ed351d733ca90f8fb9aaf1ca25423c622015374"
+    },
+    {
+      "path": "Data/results/figure3/heat_convergence.csv",
+      "bytes": 30348,
+      "sha256": "e3bbd06925c54ea6a26efe2cda22de4c12523eef2fcaea6de9f39f00bf6c820b"
+    },
+    {
+      "path": "Data/results/figure3/heat_summary.csv",
+      "bytes": 4748,
+      "sha256": "dfeaad4adc1883687ae9c50ffa01aedf3680c10a41e4feb7b8dc7b00a4db8643"
+    },
+    {
+      "path": "Data/results/figure4/elastic_refinement.json",
+      "bytes": 592173,
+      "sha256": "5d35f88f4f26e3fadbfae6f35e22ea0544e547a0bef1c4ab0d66580451b78573"
+    },
+    {
+      "path": "Data/results/figure5/convergence.csv",
+      "bytes": 975,
+      "sha256": "64e9dd1a1b9f321971c8bdb78691c7c5c1d99a3c687ccc8627e02b6f161452e0"
+    },
+    {
+      "path": "Data/results/figure5/equal_accuracy.json",
+      "bytes": 3854,
+      "sha256": "5156aef76d32804fca3f0e29e68807b7b407cf7f220f1f0bb1d11850f0535575"
+    },
+    {
+      "path": "Data/results/figure5/load_response.json",
+      "bytes": 13365,
+      "sha256": "f812d7159be45fb876ae4afdbb805f3e413aa67fba5876a87ecae079cf7404a1"
+    },
+    {
+      "path": "Data/training/elasticity_compact_labels.npz",
+      "bytes": 12826598,
+      "sha256": "3a6f7ed52e7287e59cc4a6a4ed8609d2f116755be675ede8713e30406ae58a9b"
+    },
+    {
+      "path": "Data/training/heat.npz",
+      "bytes": 4143593,
+      "sha256": "5a64dd1e98553573918d5de033c24d3fd7c5ea6d1c885618137e126c81e7d00e"
+    },
+    {
+      "path": "models/elasticity_compact_vertex_rank2.pt",
+      "bytes": 19333,
+      "sha256": "4c80a989da85f20fa995c1403e12b1f0309c31cbaaae41c991c968fe41ce2962"
+    },
+    {
+      "path": "models/elasticity_training_report.json",
+      "bytes": 13157,
+      "sha256": "12fd31781ff56e68aa77ec433d7125bc8e94426041c5e22c6721699645111ff6"
+    },
+    {
+      "path": "models/heat.pt",
+      "bytes": 553081,
+      "sha256": "e0c8c851dcce30fe008db6fc3f96907deb6e10c9d0b2ec55f2ab36a1d43fc9bd"
+    },
+    {
+      "path": "models/heat_numpy.npy",
+      "bytes": 546512,
+      "sha256": "335fb4a873c5934d34fd0b7f5812ac24ca2b75337f1cf30c8432c197d06cc893"
+    }
+  ]
+}

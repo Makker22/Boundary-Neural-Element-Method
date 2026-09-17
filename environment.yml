@@ -1,0 +1,11 @@
+name: bnem
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12
+  - numpy=2.1
+  - scipy=1.14
+  - pytorch=2.5
+  - pytest=8.3
+  - pip

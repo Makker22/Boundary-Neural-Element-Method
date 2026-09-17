@@ -1,0 +1,162 @@
+{
+  "schema": "bnem.figure2.compact_operator_audit.v1",
+  "operator": "elastic boundary operator",
+  "boundary_dofs": 8,
+  "positive_energy_modes": 5,
+  "checkpoint": "models/elasticity_compact_vertex_rank2.pt",
+  "checkpoint_sha256": "4c80a989da85f20fa995c1403e12b1f0309c31cbaaae41c991c968fe41ce2962",
+  "training_report": "models/elasticity_training_report.json",
+  "training_bank": "Data/training/elasticity_compact_labels.npz",
+  "training_bank_sha256": "3a6f7ed52e7287e59cc4a6a4ed8609d2f116755be675ede8713e30406ae58a9b",
+  "external_holdout": "independent 512-sample mesh hold-out",
+  "external_files": 512,
+  "metrics": {
+    "matrix_error": "Frobenius norm of K_pred-K_ref divided by Frobenius norm of K_ref",
+    "action_error": "spectral norm of (K_pred-K_ref)Q divided by spectral norm of K_ref Q on the five-dimensional positive-energy subspace",
+    "rayleigh_error": "maximum absolute generalized Rayleigh-quotient error on the positive-energy subspace",
+    "modal_share": "neural complement energy divided by complete predicted energy, ranked independently within each cell"
+  },
+  "datasets": {
+    "parameter hold-out": {
+      "count": 1500,
+      "matrix_error": {
+        "median": 6.962515074771379e-05,
+        "p95": 0.00024125643694459926,
+        "maximum": 0.0006127809257200667
+      },
+      "action_error": {
+        "median": 7.097863213990762e-05,
+        "p95": 0.00025400294131612734,
+        "maximum": 0.0007550401689433089
+      },
+      "rayleigh_error": {
+        "median": 0.0006053201142228409,
+        "p95": 0.0016660903172514027,
+        "maximum": 0.00975747795889604
+      },
+      "rigid_residual": {
+        "median": 1.8739936612293816e-16,
+        "p95": 4.694016909355243e-16,
+        "maximum": 9.785981597034302e-16
+      },
+      "affine_residual": {
+        "median": 2.7636475773981523e-08,
+        "p95": 3.6698464269177447e-08,
+        "maximum": 5.7030421370626585e-08
+      },
+      "symmetry_residual": {
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "psd_violation": {
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "modal_share_by_rank": [
+        {
+          "median": 0.9825659992884552,
+          "p05": 0.8323126547701972,
+          "p95": 0.9999827256715614
+        },
+        {
+          "median": 0.8877320174790172,
+          "p05": 0.5333910493111128,
+          "p95": 0.9997031172598647
+        },
+        {
+          "median": 0.09962630828615238,
+          "p05": 0.00029292527092456607,
+          "p95": 0.42088697560923655
+        },
+        {
+          "median": 0.028057095920377972,
+          "p05": 4.780813177988694e-05,
+          "p95": 0.19507900509970344
+        },
+        {
+          "median": 0.0010345156333037742,
+          "p05": 1.5518928214843834e-06,
+          "p95": 0.01568711846635875
+        }
+      ]
+    },
+    "independent-mesh hold-out": {
+      "count": 512,
+      "matrix_error": {
+        "median": 0.0001194340483858634,
+        "p95": 0.00029992877082351985,
+        "maximum": 0.0006670220229150594
+      },
+      "action_error": {
+        "median": 0.0001228374996612947,
+        "p95": 0.0003394653451004603,
+        "maximum": 0.0008304792348442856
+      },
+      "rayleigh_error": {
+        "median": 0.0006167152877266378,
+        "p95": 0.0015051612737095876,
+        "maximum": 0.002691076657598451
+      },
+      "rigid_residual": {
+        "median": 1.7029618080661153e-16,
+        "p95": 2.555455970657957e-16,
+        "maximum": 3.4208498030240556e-16
+      },
+      "affine_residual": {
+        "median": 2.6726726125046985e-08,
+        "p95": 3.3789312459558175e-08,
+        "maximum": 3.978774563326623e-08
+      },
+      "symmetry_residual": {
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "psd_violation": {
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "modal_share_by_rank": [
+        {
+          "median": 0.9749243911359302,
+          "p05": 0.9010725987082041,
+          "p95": 0.9989435160678437
+        },
+        {
+          "median": 0.943234033240521,
+          "p05": 0.7872092923899549,
+          "p95": 0.9980632613981171
+        },
+        {
+          "median": 0.05136226045183774,
+          "p05": 0.0019169832445497875,
+          "p95": 0.18686498912042135
+        },
+        {
+          "median": 0.02519467187566188,
+          "p05": 0.0009161068715505229,
+          "p95": 0.1157224279129382
+        },
+        {
+          "median": 0.0033955322164934028,
+          "p05": 6.926230047981483e-05,
+          "p95": 0.022516682232245865
+        }
+      ]
+    }
+  },
+  "display_only": {
+    "poisson_ratio_range": [
+      0.2,
+      0.4
+    ],
+    "parameter_hold_out_count": 900,
+    "independent_mesh_hold_out_count": 512,
+    "selection": "Both displayed test sets use the same Poisson-ratio range. The complete 1500-sample parameter hold-out remains available in the released CSV and NPZ files.",
+    "zero_residual_floor": 1e-18,
+    "purpose": "logarithmic structural-preservation display only; raw zeros remain zero in CSV and NPZ"
+  }
+}

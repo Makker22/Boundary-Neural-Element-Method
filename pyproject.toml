@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boundary-neural-element-method"
+version = "1.0.0"
+description = "Composable neural boundary operators for PDE discretization"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "torch>=2.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src.bnem*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

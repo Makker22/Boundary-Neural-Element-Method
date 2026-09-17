@@ -1,0 +1,16 @@
+case,method,dofs,elements,error_percent,timing_workpoint
+compressible,bnem,31206,15378,0.21270454291298352,False
+compressible,bnem,40658,20064,0.18316206828267811,True
+compressible,bnem,472190,235182,0.01002028183935242,False
+compressible,fem,23790,11710,1.0399291194134348,False
+compressible,fem,31206,15378,0.8489628969616472,False
+compressible,fem,124206,61630,0.2701687625005621,False
+compressible,fem,185514,92172,0.18973089050152828,True
+near_incompressible,bnem,31206,15378,1.4804169897225976,False
+near_incompressible,bnem,52802,26096,0.9739854864481786,False
+near_incompressible,bnem,208854,103810,0.2125459780058426,False
+near_incompressible,bnem,230182,114442,0.18539174858745092,True
+near_incompressible,fem,2681538,1338536,0.20296370493349628,False
+near_incompressible,fem,2788614,1392026,0.18466030671366487,True
+near_incompressible,fem,4191654,2093018,0.08856463813053729,False
+near_incompressible,fem,4297210,2145772,0.08454410463181833,False

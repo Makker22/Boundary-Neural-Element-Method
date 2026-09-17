@@ -1,0 +1,21 @@
+{
+  "schema": "bnem.fig4.compact_single_hole.v1",
+  "reference": {
+    "element": "standard four-node bilinear quadrilateral",
+    "integration": "2x2 full Gauss",
+    "elements": 24304,
+    "last_two_mesh_change": {
+      "displacement_relative_change": 0.00031393343807381845,
+      "energy_relative_change": 0.0003026268679324789,
+      "reaction_relative_change": 0.00030262686793521476
+    }
+  },
+  "bnem": {
+    "level": "h0.080",
+    "elements": 1519,
+    "displacement_relative_l2": 0.0009112974450353848
+  },
+  "audit_grid_41": {
+    "high_stress_iou": 0.837465564738292
+  }
+}

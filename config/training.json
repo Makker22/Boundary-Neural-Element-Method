@@ -1,0 +1,51 @@
+{
+  "heat": {
+    "dataset": "Data/training/heat.npz",
+    "count": 4000,
+    "train_count": 3200,
+    "validation_count": 400,
+    "test_count": 400,
+    "subdivisions": 16,
+    "hidden_dim": 192,
+    "hidden_layers": 4,
+    "correction_scale": 0.5,
+    "epochs": 600,
+    "batch_size": 256,
+    "learning_rate": 0.0008,
+    "weight_decay": 1e-07,
+    "seed": 20260712
+  },
+  "elasticity": {
+    "dataset": "Data/training/elasticity_compact_labels.npz",
+    "checkpoint": "models/elasticity_compact_vertex_rank2.pt",
+    "geometry_count": 1000,
+    "poisson_values": [
+      0.2,
+      0.24,
+      0.28,
+      0.32,
+      0.36,
+      0.4,
+      0.44,
+      0.46,
+      0.48,
+      0.49
+    ],
+    "train_samples": 7000,
+    "validation_samples": 1500,
+    "test_samples": 1500,
+    "external_test_samples": 512,
+    "feature_dim": 22,
+    "output_parameters": 3,
+    "hidden_dim": 48,
+    "hidden_layers": 2,
+    "trainable_parameters": 3603,
+    "epochs": 1200,
+    "selected_epoch": 1000,
+    "batch_size": 512,
+    "learning_rate": 0.002,
+    "weight_decay": 1e-06,
+    "seed": 20260912,
+    "precision": "float32 training; float64 assembly and solve"
+  }
+}

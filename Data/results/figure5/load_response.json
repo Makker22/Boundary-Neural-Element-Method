@@ -1,0 +1,301 @@
+{
+  "schema": "bnem.figure5.actual_load_response.v1",
+  "measure": "right-edge arc-length mean horizontal displacement divided by L",
+  "load_control": "uniform right-edge traction",
+  "load_levels_mpa": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "construction": "one sparse solve per plotted load RHS; factorization reused only within each linear case",
+  "used_for_timing_comparison": false,
+  "solver": {
+    "name": "single-thread SuperLU",
+    "ordering": "MMD_AT_PLUS_A",
+    "diag_pivot_thresh": 0.0,
+    "symmetric_mode": true,
+    "relax": 10,
+    "panel_size": 2
+  },
+  "checkpoint_sha256": "4c80a989da85f20fa995c1403e12b1f0309c31cbaaae41c991c968fe41ce2962",
+  "cases": {
+    "compressible": {
+      "poisson": 0.4,
+      "scenario": {
+        "id": "healthy_native_nu0.40",
+        "matrix_E": 3500.0,
+        "fibre_E": 70000.0,
+        "matrix_nu": 0.4,
+        "fibre_nu": 0.4
+      },
+      "methods": {
+        "bnem": {
+          "mesh_file_sha256": "9159d73b32b1549d0b0212a9e4f15cae3cb97f0fd7b5a9cf8023186ab8aeabdf",
+          "elements": 20064,
+          "dofs": 40658,
+          "matrix_nnz": 725476,
+          "points": [
+            {
+              "traction_mpa": 0.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 132,
+              "mean_ux_over_L": 0.0,
+              "solver_called": true,
+              "solve_seconds": 0.010242899996228516,
+              "free_residual_relative": 0.0,
+              "rhs_sha256": "1104c41c4758f94261574f11028a747f7f91f8674ff84bac2a8c7cb86a79d4b8",
+              "solution_sha256": "72b2d1428b8cfe7cf760650f5ff2499348fdb7ad3864fe4ef4cb970112b50569"
+            },
+            {
+              "traction_mpa": 0.25,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 132,
+              "mean_ux_over_L": 4.083495246037513e-05,
+              "solver_called": true,
+              "solve_seconds": 0.014122499997029081,
+              "free_residual_relative": 3.453389215052291e-12,
+              "rhs_sha256": "f4b17438c569e82fe710c8e7589738d231745b4c5786a699c63fb7f8a8e81b99",
+              "solution_sha256": "903b79358a27c787351fc6f3382b52bc51247e630623d89510a0b073e5f8d187"
+            },
+            {
+              "traction_mpa": 0.5,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 132,
+              "mean_ux_over_L": 8.166990492075027e-05,
+              "solver_called": true,
+              "solve_seconds": 0.014939799999410752,
+              "free_residual_relative": 3.453389215052291e-12,
+              "rhs_sha256": "40ef50fbad9b18899fe79f75ea9510b000e7edc08494a2993d4e436a8e8e928e",
+              "solution_sha256": "8880fbd73d7bcf953143e7e26110babf1012af66f6cc1956feab2e35b12af0b2"
+            },
+            {
+              "traction_mpa": 0.75,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 132,
+              "mean_ux_over_L": 0.00012250485738112538,
+              "solver_called": true,
+              "solve_seconds": 0.008219100003771018,
+              "free_residual_relative": 3.5100476967296775e-12,
+              "rhs_sha256": "42ddcf8f1f37551359eb4fdb70c3717efe355bcf75753bbb8d2ed5eafa073d15",
+              "solution_sha256": "01f83cfca857e149941206724dea5d99d1ba7fe175ae763c26b01efe21b7ad84"
+            },
+            {
+              "traction_mpa": 1.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 132,
+              "mean_ux_over_L": 0.00016333980984150053,
+              "solver_called": true,
+              "solve_seconds": 0.011837300000479445,
+              "free_residual_relative": 3.453389215052291e-12,
+              "rhs_sha256": "a7a55bd133624f2983cf7ab19205607aa74a172d8cc1af44e5f50482de4310f4",
+              "solution_sha256": "f34d6063b6085c217cc2404685a1ee144eb6381e6095738f1225fd5018ef96a2"
+            }
+          ]
+        },
+        "fem": {
+          "mesh_file_sha256": "70bdc90f3151af76aca60b720506656e461b09ddfcaf0a21996e494b7ac40bd3",
+          "elements": 92172,
+          "dofs": 185514,
+          "matrix_nnz": 3325204,
+          "points": [
+            {
+              "traction_mpa": 0.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 292,
+              "mean_ux_over_L": 0.0,
+              "solver_called": true,
+              "solve_seconds": 0.03347399999620393,
+              "free_residual_relative": 0.0,
+              "rhs_sha256": "0ad8b45c9f324150d1cbb650640c20cfbbb4e6076916a0e049dd6c8598c702e4",
+              "solution_sha256": "40f33dec56eda46b4d806618471e3f296f272d8b88ad247e7fa9bb1b2879227c"
+            },
+            {
+              "traction_mpa": 0.25,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 292,
+              "mean_ux_over_L": 4.081405452540577e-05,
+              "solver_called": true,
+              "solve_seconds": 0.03521669999463484,
+              "free_residual_relative": 1.2612950517476671e-11,
+              "rhs_sha256": "2d518a6492ebfb03090311ce4d1a61d7f19e678ce0afa27ac82122b62cf5506f",
+              "solution_sha256": "e7bc395bda0c0e8ee300fc0f0dc057d0bc8d7bc47755b540ca750f6c2314fa4e"
+            },
+            {
+              "traction_mpa": 0.5,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 292,
+              "mean_ux_over_L": 8.162810905081154e-05,
+              "solver_called": true,
+              "solve_seconds": 0.03449199999886332,
+              "free_residual_relative": 1.2612950517476671e-11,
+              "rhs_sha256": "ba5f2c531679d706e54f90929a909a4cf183978c7485eec169408191ae345479",
+              "solution_sha256": "06fc9f5126abc509d7b6afd456cee95d6dbccc78df741221b1c55d03d355823b"
+            },
+            {
+              "traction_mpa": 0.75,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 292,
+              "mean_ux_over_L": 0.00012244216357621735,
+              "solver_called": true,
+              "solve_seconds": 0.03441759999986971,
+              "free_residual_relative": 1.2626252677257135e-11,
+              "rhs_sha256": "6256c5f94088da6e158891fb6b6a2a008a61717ffae76a0e07a2c224d640d1a2",
+              "solution_sha256": "89c1c60d24464471bb98398feeb7984bd84a8196f39cdcee11be662b06a60649"
+            },
+            {
+              "traction_mpa": 1.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 292,
+              "mean_ux_over_L": 0.00016325621810162308,
+              "solver_called": true,
+              "solve_seconds": 0.03325799999583978,
+              "free_residual_relative": 1.2612950517476671e-11,
+              "rhs_sha256": "8cf3155ccc0adf132152dc66686975f8ff6c037bad1a2c9ef3443ce55e061417",
+              "solution_sha256": "def17b5fc3803e9a48ea450137f950aa42974c5fd850f75ffac28ce05634f8f3"
+            }
+          ]
+        }
+      }
+    },
+    "near_incompressible": {
+      "poisson": 0.49,
+      "scenario": {
+        "id": "healthy_native_nu0.49",
+        "matrix_E": 3500.0,
+        "fibre_E": 70000.0,
+        "matrix_nu": 0.49,
+        "fibre_nu": 0.49
+      },
+      "methods": {
+        "bnem": {
+          "mesh_file_sha256": "c3853fd09933dd60f2aafeec2ae0c0458fec061542b0f889d8b041873a226fa5",
+          "elements": 114442,
+          "dofs": 230182,
+          "matrix_nnz": 4127692,
+          "points": [
+            {
+              "traction_mpa": 0.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 324,
+              "mean_ux_over_L": 0.0,
+              "solver_called": true,
+              "solve_seconds": 0.04823630000464618,
+              "free_residual_relative": 0.0,
+              "rhs_sha256": "b1339c6d295460254c0f9ee8dce7c1a45d0742776dfac9fe00091d6264f7882f",
+              "solution_sha256": "71bdc5990e98ee53d28546322a205099a440b8d3c72f3f773df7be6b2ea5f646"
+            },
+            {
+              "traction_mpa": 0.25,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 324,
+              "mean_ux_over_L": 3.2484876412709816e-05,
+              "solver_called": true,
+              "solve_seconds": 0.0475734999999986,
+              "free_residual_relative": 7.240523393015416e-11,
+              "rhs_sha256": "2b6f45379d93fefe80785dc83b53d800c9aa03d99cd91b4395c08d19b36f9e52",
+              "solution_sha256": "decbc06fbce5bab9567a49714fd8f1f42cb4ebc7b5cbc4dfcee874e72f48c70e"
+            },
+            {
+              "traction_mpa": 0.5,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 324,
+              "mean_ux_over_L": 6.496975282541963e-05,
+              "solver_called": true,
+              "solve_seconds": 0.048133800002688076,
+              "free_residual_relative": 7.240523393015416e-11,
+              "rhs_sha256": "7f4706317a50362e81332ed2e527c9732e8b3e386baa1623830f2a8a977288b0",
+              "solution_sha256": "1793508fa84647686a10930e7301537c775f3400a7710e51c0f2f30cc8fdb6ca"
+            },
+            {
+              "traction_mpa": 0.75,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 324,
+              "mean_ux_over_L": 9.745462923812942e-05,
+              "solver_called": true,
+              "solve_seconds": 0.04617639999923995,
+              "free_residual_relative": 7.290614187596226e-11,
+              "rhs_sha256": "b16225fc845751fafd149c8dc3a517daf7aedb7b416ccd5114c560000173c288",
+              "solution_sha256": "dd6777c867ae05381ffbdca109ea94dd6a6a0cb4ab87620bc018ea38363df5e9"
+            },
+            {
+              "traction_mpa": 1.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 324,
+              "mean_ux_over_L": 0.00012993950565083926,
+              "solver_called": true,
+              "solve_seconds": 0.046072899996943306,
+              "free_residual_relative": 7.240523393015416e-11,
+              "rhs_sha256": "ee9fe8de51af2c5782ec417f2794c7096a593785b467cf40130b3a9da75b0bdc",
+              "solution_sha256": "c19e2dc7078e126200b20e47d0c3096043cf46665f6a224cd224f7e6e1a148ad"
+            }
+          ]
+        },
+        "fem": {
+          "mesh_file_sha256": "ed4380dcffd2b14a4353cc2d96416e8781aef9dc2ddc285f7dbb575ed3e98d0a",
+          "elements": 1392026,
+          "dofs": 2788614,
+          "matrix_nnz": 50140300,
+          "points": [
+            {
+              "traction_mpa": 0.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 1140,
+              "mean_ux_over_L": 0.0,
+              "solver_called": true,
+              "solve_seconds": 2.2428050999951665,
+              "free_residual_relative": 0.0,
+              "rhs_sha256": "9cd3d8f2b5d23c192836c7f02888fdd135c93e505099739dc6f642eb87a5542d",
+              "solution_sha256": "f852e9e65026bf744cdb5ae8a6ef40e745338641bb4b07fa32b2acc2d31d77bf"
+            },
+            {
+              "traction_mpa": 0.25,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 1140,
+              "mean_ux_over_L": 3.248316443039202e-05,
+              "solver_called": true,
+              "solve_seconds": 1.0947459999952116,
+              "free_residual_relative": 5.864785846693355e-10,
+              "rhs_sha256": "cbd4dcad10a90ff92bb4e9d29eb73c63f907549a0ce500f935b925f2ad598a86",
+              "solution_sha256": "ec272346542f0bc4a7fef559fc3104b753cf4d9bd1391d97537328d04fef8c23"
+            },
+            {
+              "traction_mpa": 0.5,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 1140,
+              "mean_ux_over_L": 6.496632886078404e-05,
+              "solver_called": true,
+              "solve_seconds": 1.1988927999991574,
+              "free_residual_relative": 5.864785846693355e-10,
+              "rhs_sha256": "3eba8256e66134aac9ab2860ec511e8407d28e8fd78a2b5ea62b643884c91c22",
+              "solution_sha256": "0225786b2add847bea9653f03e2f7c2be6c25bbcce84143f2f39fba958db9c97"
+            },
+            {
+              "traction_mpa": 0.75,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 1140,
+              "mean_ux_over_L": 9.74494932911761e-05,
+              "solver_called": true,
+              "solve_seconds": 1.591671399997722,
+              "free_residual_relative": 5.856715226208212e-10,
+              "rhs_sha256": "62def054ea691bdfacf3e00a72a697912584aa9c3af795621fd85eb2f850d499",
+              "solution_sha256": "ce671ec9e0353e7fedffc1fe535bedb24cb7ac0ea6811768cf10ae67c00ae7cf"
+            },
+            {
+              "traction_mpa": 1.0,
+              "boundary_length_over_L": 1.0,
+              "boundary_edges": 1140,
+              "mean_ux_over_L": 0.00012993265772156808,
+              "solver_called": true,
+              "solve_seconds": 1.2629290999975638,
+              "free_residual_relative": 5.864785846693355e-10,
+              "rhs_sha256": "662e2acf0f86270aad12b780f3e092cea1bc05be497952e0114756a4eb7706d8",
+              "solution_sha256": "463fb7efc61ebdf866cb3b61c75aa02c36240d6f9b021434c646c8edcff71902"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
