@@ -100,12 +100,7 @@ selection to `generated/figure_data/figure2/display_metrics.csv`.
 
 The repository includes the released training arrays, trained checkpoints,
 all numerical tables used to verify the reported statistics, representative
-field samples and compact mesh geometry. Multi-gigabyte converged FEM reference
-meshes and full-resolution solution archives are not stored in Git; their
-convergence criteria, hashes and derived numerical records are retained in the
-compact release data.
-
-No file in this release exceeds GitHub's 100 MB per-file limit.
+field samples and compact mesh geometry.
 
 ## Licenses
 
